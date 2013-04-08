@@ -1,0 +1,9 @@
+{
+    "main": {
+	    "hidden_keys": ["images"]
+    },
+    "dublin": {
+        "description": "",
+        "title": "产品介绍"
+    }
+}
