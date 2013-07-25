@@ -1,3 +1,9 @@
+---
+created: ''
+creator: ''
+description: ''
+title: 技术文档
+---
 技术文档
 //////////////////
 
@@ -181,6 +187,83 @@ CDN 缓存部署
   - 300  未知错误
 
 - return_msg: 转换额外信息，通常是错误提示
+
+
+云查看链接生成
+=======================
+
+假设文件的下载地址是：http://127.0.0.1/test.doc
+那么这个文件的MD5就是: a844c1dc43014146a97d06fa86421049
+
+MD5 计算方式：
+   
+Python版本::
+
+    >> import hashlib
+    >> hash_md5 = hashlib.md5()
+    >> hash_md5.update(‘http://127.0.0.1/test.doc’)
+    >> print hash_md5.hexdigest()
+    
+下载地址
+-----------
+
+{{SERVER_DOMAIN}}/files/{{FILE_MD5}}.{{FILE_EXT}}
+
+FILE_EXT：源文件的后缀
+
+这个例子中，下载地址是：
+
+http://127.0.0.1:6543/files/a844c1dc43014146a97d06fa86421049.py
+
+原始文件路径
+----------------
+
+{{FRS_ROOT  }}/{{FILE_MD5}}.{{FILE_EXT}}
+
+FRS_ROOT：在fts_web/app.ini配置文件中定义
+
+转换文件下载地址
+------------------
+
+一个源文件可以有多个转换文件，因为每一种文件都能转换成多种其他的文件
+
+{{SERVER_DOMAIN}}/cache/files/{{FILE_MD5}}.{{FILE_EXT}}/.frs.{{VMIME}}/{{RESULT_NAME}}
+
+VMIME：转换文件的MIME Type，将“.”替换为“_”
+
+RESULT_NAME：转换文件的文件名
+
+    - Flash： transformed.swf
+    - Html:   transformed.html
+    - Audio:  transformed.mp3
+    - Video:  transformed.flv
+    - Plain:  transformed.txt
+    - Pdf:    transformed.pdf
+    - Exif:   transformed.json
+    - Thumbnail:  large.png，preview.png，
+    - Compression:  transformed.json
+
+    Exif是图片中储存的额外信息，转换为json数据
+    Thumbnail是图片的缩略图，有几种不同的大小
+    Compression是压缩包的转换为json数据，然后由浏览器的javascript渲染，
+
+这个例子中，需要转换为html预览，转换文件下载地址是：
+
+http://127.0.0.1:6543/cache/files/a844c1dc43014146a97d06fa86421049.py/.frs.text_html/transformed.htm
+
+转换文件地址     
+------------------
+
+{{FRS_CACHE}}/files/{{FILE_MD5}}.{{FILE_EXT}}/.frs.{{VMIME}}/{{RESULT_NAME}}
+
+FRS_CACHE：在fts_web/app.ini 配置文件中定义，假设是：
+
+/tmp/data/frscache
+
+这个例子中，需要转换为html预览，转换文件地址是：
+
+/tmp/data/frscache/files/a844c1dc43014146a97d06fa86421049.py/.frs.text_html/transformed.html
+
 
 转换格式明细
 =============================
