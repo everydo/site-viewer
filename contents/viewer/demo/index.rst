@@ -16,6 +16,12 @@ title: 在线演示
 
 - PPT文档: http://download.zopen.cn/demo/edo-viewer.ppt
 
+- DOC文档: http://download.zopen.cn/demo/demo.doc
+
+- DOCX文档: http://download.zopen.cn/demo/demo.docx
+
+- XLS文档: http://download.zopen.cn/demo/demo.xls
+
 - 视频: http://download.zopen.cn/demo/mm%5B1%5D.mpg
 
 - 音频: http://download.zopen.cn/demo/demo.wav
