@@ -102,6 +102,14 @@ edo_viewer.js解析
       var url = serverUrl + '/cache/files/' + name_md5 + suffix + '/.frs.application_json/transformed.json?source=' + encodeUrl(sourceUrl);
       edoViewerAjaxRequest(0, url, 'RAR', '', 'doc-viewer', serverUrl, '', 'GET');
 
+  - 定制
+
+    - 内部方式
+
+      - edoViewerAjaxRequest （发起Ajax请求响应及页面展现）
+      - encodeUrl （对url进行encode）例如：encodeUrl(sourceUrl)
+      - edoFun （根据后缀得到预览类型）例如：edoFun('.doc') 
+
 安装环境
 ==================
 - Ubuntu Server 8.04 以上版本
