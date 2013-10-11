@@ -62,6 +62,46 @@ title: 技术文档
 - 对excel文件，我们会采用html来查看
 - 对于不支持flash的浏览器，我们会采用html来显示
 
+定制查看器
+---------------------
+edo_viewer.js依赖的库：
+
+- flowplayer.js
+- swfobject.js
+- md5.js   
+
+edo_viewer.js解析
+
+- 原理：
+
+  - 生成云查看链接 → 发起Ajax请求响应 → 页面展现
+
+- 最外层入口 edo_viewer() 方法
+- 内部发起Ajax请求 edoViewerAjaxRequest() 方法
+
+  - 参数
+
+    - n：第几次Ajax转换请求（从0开始到29结束）
+    - url: 预览地址（请参看云查看链接生成）
+    - type: 预览类型（html，RAR，audio，video，image）
+    - suffix：后缀（.gif，.png ...，仅用于图片预览时，是否需要显示Exif信息） 
+    - identify：展示位置
+    - serverUrl：服务器地址（用于IE浏览器是否做跨域处理，和资源文件地址）
+    - exif_requestUrl：Exif请求的地址（ 仅用于图片预览时）
+    - method：请求类型（HEAD，GET ...）
+
+  - 例如::
+       
+      // HTML预览
+      var name_md5 = hex_md5(sourceUrl);
+      var url = serverUrl + '/cache/files/' + name_md5 + suffix + '/.frs.text_html/transformed.html?source=' + encodeUrl(sourceUrl);
+      edoViewerAjaxRequest(0, url, 'html', '', 'doc-viewer', serverUrl, '', 'HEAD');
+      
+      // 压缩包预览
+      var name_md5 = hex_md5(sourceUrl);   
+      var url = serverUrl + '/cache/files/' + name_md5 + suffix + '/.frs.application_json/transformed.json?source=' + encodeUrl(sourceUrl);
+      edoViewerAjaxRequest(0, url, 'RAR', '', 'doc-viewer', serverUrl, '', 'GET');
+
 安装环境
 ==================
 - Ubuntu Server 8.04 以上版本
@@ -416,5 +456,3 @@ pdf 可以转换如下类型：
 - tgz：application/x-gzip application/x-compressed
 
 可转换为包含文件夹内容的 json格式： application/json
-
-
