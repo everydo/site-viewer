@@ -46,15 +46,16 @@ title: 技术文档
     <div id="doc-viewer"></div>
     <script src="http://your.server.ip:port/static/edo_viewer.js"></script>
     <script type="text/javascript">
-        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', 700, 700)
+        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', 700, 700, false, false)
     </script>
 
-其中edo_view方法是关键，有5个参数:
+其中edo_view方法是关键，有7个参数:
 
 - ``http://your.server.ip:port`` :这个是服务器的地址和端口, 比如 ``http://viewer.everydo.com:9870/``
 - ``file:///var/aa.doc`` 表示原始文件的url地址， ``file://`` 表示是本地文件，也可以是 ``http://``, ``ftp://`` 等远程获取.
 - ``doc-viewer`` : 查看器放置位置的id
-- ``700, 700`` : 初始大小
+- ``700, 700`` : 初始大小（用于flash、html、多媒体查看器）
+- ``allowPrint, allowCopy`` : 是否允许打印和复制（用于flash查看器）
 
 我们会根据文件的后缀以及浏览器支持的情况，进行自动选择合适的查看器：
 
@@ -64,51 +65,18 @@ title: 技术文档
 
 定制查看器
 ---------------------
-edo_viewer.js依赖的库：
 
-- flowplayer.js
-- swfobject.js
-- md5.js   
+edo_viewer.js提供源代码的下载：
 
-edo_viewer.js解析
+- https://github.com/everydo/viewers
+- 里面包含了5个js：
 
-- 原理：
+  - flowplayer-3.1.4.min.js
+  - swfobject.js
+  - md5.js
+  - viewer.js (如果您要对查看器进行扩展或调整，修改这个文件即可)
+  - main.js
 
-  - 生成云查看链接 → 发起Ajax请求响应 → 页面展现
-
-- 最外层入口 edo_viewer() 方法
-- 内部发起Ajax请求 edoViewerAjaxRequest() 方法
-
-  - 参数
-
-    - n：第几次Ajax转换请求（从0开始到29结束）
-    - url: 预览地址（请参看云查看链接生成）
-    - type: 预览类型（html，RAR，audio，video，image）
-    - suffix：后缀（.gif，.png ...，仅用于图片预览时，是否需要显示Exif信息） 
-    - identify：展示位置
-    - serverUrl：服务器地址（用于IE浏览器是否做跨域处理，和资源文件地址）
-    - exif_requestUrl：Exif请求的地址（ 仅用于图片预览时）
-    - method：请求类型（HEAD，GET ...）
-
-  - 例如::
-       
-      // HTML预览
-      var name_md5 = hex_md5(sourceUrl);
-      var url = serverUrl + '/cache/files/' + name_md5 + suffix + '/.frs.text_html/transformed.html?source=' + encodeUrl(sourceUrl);
-      edoViewerAjaxRequest(0, url, 'html', '', 'doc-viewer', serverUrl, '', 'HEAD');
-      
-      // 压缩包预览
-      var name_md5 = hex_md5(sourceUrl);   
-      var url = serverUrl + '/cache/files/' + name_md5 + suffix + '/.frs.application_json/transformed.json?source=' + encodeUrl(sourceUrl);
-      edoViewerAjaxRequest(0, url, 'RAR', '', 'doc-viewer', serverUrl, '', 'GET');
-
-  - 定制
-
-    - 内部方式
-
-      - edoViewerAjaxRequest （发起Ajax请求响应及页面展现）
-      - encodeUrl （对url进行encode）例如：encodeUrl(sourceUrl)
-      - edoFun （根据后缀得到预览类型）例如：edoFun('.doc') 
 
 安装环境
 ==================
