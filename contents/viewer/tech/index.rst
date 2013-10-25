@@ -54,7 +54,7 @@ title: 技术文档
 - ``http://your.server.ip:port`` :这个是服务器的地址和端口, 比如 ``http://viewer.everydo.com:9870/``
 - ``file:///var/aa.doc`` 表示原始文件的url地址， ``file://`` 表示是本地文件，也可以是 ``http://``, ``ftp://`` 等远程获取.
 - ``doc-viewer`` : 查看器放置位置的id
-- ``kwargs`` : 是一个展示参数(width, height, allow_print, allow_copy ...)
+- ``kwargs`` : 是一个展示参数(width, height, allow_print, allow_copy, ...)
 
 我们会根据文件的后缀以及浏览器支持的情况，进行自动选择合适的查看器：
 
