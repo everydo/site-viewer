@@ -46,16 +46,15 @@ title: 技术文档
     <div id="doc-viewer"></div>
     <script src="http://your.server.ip:port/static/edo_viewer.js"></script>
     <script type="text/javascript">
-        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', 700, 700, false, false)
+        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', {width:700, height:537})
     </script>
 
-其中edo_view方法是关键，有7个参数:
+其中edo_view方法是关键，有4个参数:
 
 - ``http://your.server.ip:port`` :这个是服务器的地址和端口, 比如 ``http://viewer.everydo.com:9870/``
 - ``file:///var/aa.doc`` 表示原始文件的url地址， ``file://`` 表示是本地文件，也可以是 ``http://``, ``ftp://`` 等远程获取.
 - ``doc-viewer`` : 查看器放置位置的id
-- ``700, 700`` : 初始大小（用于flash、html、多媒体查看器）
-- ``allowPrint, allowCopy`` : 是否允许打印和复制（用于flash查看器）
+- ``kwargs`` : 是一个展示参数(width, height, allow_print, allow_copy ...)
 
 我们会根据文件的后缀以及浏览器支持的情况，进行自动选择合适的查看器：
 
