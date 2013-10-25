@@ -15,7 +15,7 @@ title: 首页
    <script src="http://viewer.everydo.com:9870/static/edo_viewer.js"></script>
             <div id="website"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'website', 717, 537)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'website', {width:700, height:537})
    </script>
 
         </div>
