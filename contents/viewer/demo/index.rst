@@ -32,7 +32,7 @@ title: 在线演示
 
 .. raw:: html
 
-   <script src="http://viewer.everydo.com:9870/static/api.js"></script>
+   <script src="http://viewer.everydo.com:9870/edoviewer/api.js"></script>
    <script>
     cloudview('http://viewer.everydo.com:9870/');
    </script>
@@ -47,7 +47,7 @@ Office 文档
 
 .. raw:: html
 
-   <script src="http://viewer.everydo.com:9870/static/edo_viewer.js"></script>
+   <script src="http://viewer.everydo.com:9870/edoviewer/edo_viewer.js"></script>
    <div id="doc-viewer-01"></div>
    <script type="text/javascript">
        edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'doc-viewer-01', {width:700, height:537})
