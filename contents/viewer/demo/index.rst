@@ -50,7 +50,7 @@ Office 文档
    <script src="http://viewer.everydo.com:9870/static/edo_viewer.js"></script>
    <div id="doc-viewer-01"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'doc-viewer-01', 717, 537)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'doc-viewer-01', {width:700, height:537})
    </script>
 
 视频
@@ -61,7 +61,7 @@ Office 文档
 
    <div id="doc-viewer-02"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/mm[1].mpg', 'doc-viewer-02', 717, 717)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/mm[1].mpg', 'doc-viewer-02', {width:700, height:600})
    </script>
 
 
@@ -73,7 +73,7 @@ Office 文档
 
    <div id="doc-viewer-03"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/demo.wav', 'doc-viewer-03', 700, 700)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/demo.wav', 'doc-viewer-03', {width:250})
    </script>
 
 压缩包
@@ -87,7 +87,7 @@ Office 文档
    </style>
    <div id="doc-viewer-04"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/everydo-test-archive-file.rar', 'doc-viewer-04', 700, 700)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/everydo-test-archive-file.rar', 'doc-viewer-04')
    </script>
 
 
@@ -99,7 +99,7 @@ Office 文档
 
    <div id="doc-viewer-05"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/application.py', 'doc-viewer-05', 700, 500)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/application.py', 'doc-viewer-05', {width:700, height:500})
    </script>
 
 
@@ -111,7 +111,7 @@ Office 文档
 
    <div id="doc-viewer-08"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/exif.jpg', 'doc-viewer-08', 700, 700)
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/exif.jpg', 'doc-viewer-08')
    </script>
 
 

@@ -46,21 +46,36 @@ title: 技术文档
     <div id="doc-viewer"></div>
     <script src="http://your.server.ip:port/static/edo_viewer.js"></script>
     <script type="text/javascript">
-        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', 700, 700)
+        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', {width:700, height:537})
     </script>
 
-其中edo_view方法是关键，有5个参数:
+其中edo_view方法是关键，有4个参数:
 
 - ``http://your.server.ip:port`` :这个是服务器的地址和端口, 比如 ``http://viewer.everydo.com:9870/``
 - ``file:///var/aa.doc`` 表示原始文件的url地址， ``file://`` 表示是本地文件，也可以是 ``http://``, ``ftp://`` 等远程获取.
 - ``doc-viewer`` : 查看器放置位置的id
-- ``700, 700`` : 初始大小
+- ``kwargs`` : 是一个展示参数(width, height, allow_print, allow_copy, ...)
 
 我们会根据文件的后缀以及浏览器支持的情况，进行自动选择合适的查看器：
 
 - 在支持flash的浏览器上，我们会采用flash查看器来显示doc/ppt/pdf之类的文件
 - 对excel文件，我们会采用html来查看
 - 对于不支持flash的浏览器，我们会采用html来显示
+
+定制查看器
+---------------------
+
+edo_viewer.js提供源代码的下载：
+
+- https://github.com/everydo/viewers
+- 里面包含了5个js：
+
+  - flowplayer-3.1.4.min.js
+  - swfobject.js
+  - md5.js
+  - viewer.js (如果您要对查看器进行扩展或调整，修改这个文件即可)
+  - main.js
+
 
 安装环境
 ==================
@@ -418,5 +433,3 @@ pdf 可以转换如下类型：
 - tgz：application/x-gzip application/x-compressed
 
 可转换为包含文件夹内容的 json格式： application/json
-
-
