@@ -120,6 +120,7 @@ CDN 缓存部署
 如果只希望进行一种转换，可在这个队列中加入如下json格式的内容::
 
     {
+    "remote": "http://server/abc.doc",
     "origin": "/opt/hg/data/files/input.pdf",
     "origin_mime": "application/pdf",
     "result_mime": "application/x-shockwave-flash-x",
@@ -129,6 +130,7 @@ CDN 缓存部署
 
 其中：
 
+- remote: 如果文件在远端，还没有下载，队列会自动去下载; 如果不在远端，这个参数为空
 - origin：待转换文件位置
 - result: 转换后主文件存放位置他的附加文件，存放在同一文件夹
 - origin_mime: (可选)待转换文件类型
