@@ -61,7 +61,7 @@ Office 文档
 
    <div id="doc-viewer-02"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/mm[1].mpg', 'doc-viewer-02', {width:700, height:600})
+       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/mm[1].mpg', 'doc-viewer-02', {width:520, height:330})
    </script>
 
 
