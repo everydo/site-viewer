@@ -70,7 +70,7 @@ edo_viewer.js提供源代码的下载：
 - https://github.com/everydo/viewers
 - 里面包含了5个js：
 
-  - flowplayer-3.1.4.min.js
+  - flowplayer.js
   - swfobject.js
   - md5.js
   - viewer.js (如果您要对查看器进行扩展或调整，修改这个文件即可)
