@@ -50,7 +50,7 @@ Office 文档
    <script src="http://viewer.everydo.com:9870/edoviewer/edo_viewer.js"></script>
    <div id="doc-viewer-01"></div>
    <script type="text/javascript">
-       var viewer = EdoViewer.createViewer('edo-viewer-01', {
+       var viewer = EdoViewer.createViewer('doc-viewer-01', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
          width: 700,
@@ -67,7 +67,7 @@ Office 文档
 
    <div id="doc-viewer-02"></div>
    <script type="text/javascript">
-       var viewer = EdoViewer.createViewer('edo-viewer-02', {
+       var viewer = EdoViewer.createViewer('doc-viewer-02', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/mm[1].mpg',
          width: 520,
@@ -85,7 +85,7 @@ Office 文档
 
    <div id="doc-viewer-03"></div>
    <script type="text/javascript">
-       var viewer = EdoViewer.createViewer('edo-viewer-03', {
+       var viewer = EdoViewer.createViewer('doc-viewer-03', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/demo.wav',
          width: 250
@@ -104,7 +104,7 @@ Office 文档
    </style>
    <div id="doc-viewer-04"></div>
    <script type="text/javascript">
-       var viewer = EdoViewer.createViewer('edo-viewer-04', {
+       var viewer = EdoViewer.createViewer('doc-viewer-04', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar'
        });
@@ -120,7 +120,7 @@ Office 文档
 
    <div id="doc-viewer-05"></div>
    <script type="text/javascript">
-       var viewer = EdoViewer.createViewer('edo-viewer-05', {
+       var viewer = EdoViewer.createViewer('doc-viewer-05', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/application.py',
          width: 700,
@@ -138,7 +138,7 @@ Office 文档
 
    <div id="doc-viewer-06"></div>
    <script type="text/javascript">
-       var viewer = EdoViewer.createViewer('edo-viewer-06', {
+       var viewer = EdoViewer.createViewer('doc-viewer-06', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/exif.jpg'
        });
