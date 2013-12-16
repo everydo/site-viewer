@@ -142,6 +142,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/exif.jpg'
        });
+       viewer.load();
    </script>
 
 
