@@ -12,12 +12,17 @@ title: 首页
         <div class="desc center box">适合：云存储/网盘类服务、轻博客文档分享、文档分享网站、邮件附件查看、政府公文在线查看、公司网站产品资料查看…</div>
 
         <div class="banner center box">
-   <script src="http://viewer.everydo.com:9870/edoviewer/edo_viewer.js"></script>
-            <div id="website"></div>
-   <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'website', {width:700, height:537})
-   </script>
-
+        <script src="http://viewer.everydo.com:9870/edoviewer/edo_viewer.js"></script>
+        <div id="edoviewer"></div>
+        <script type="text/javascript">
+            var viewer = EdoViewer.createViewer('edoviewer', {
+              server_url: 'http://viewer.everydo.com:9870',
+              source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
+              width: 700,
+              height: 537
+           });
+           viewer.load();
+        </script>
         </div>
 
         <ul class="features box">
