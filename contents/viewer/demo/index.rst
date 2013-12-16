@@ -50,7 +50,13 @@ Office 文档
    <script src="http://viewer.everydo.com:9870/edoviewer/edo_viewer.js"></script>
    <div id="doc-viewer-01"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/edo-viewer.ppt', 'doc-viewer-01', {width:700, height:537})
+       var viewer = EdoViewer.createViewer('edo-viewer-01', {
+         server_url: 'http://viewer.everydo.com:9870',
+         source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
+         width: 700,
+         height: 537
+       });
+       viewer.load();
    </script>
 
 视频
@@ -61,7 +67,13 @@ Office 文档
 
    <div id="doc-viewer-02"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/mm[1].mpg', 'doc-viewer-02', {width:520, height:330})
+       var viewer = EdoViewer.createViewer('edo-viewer-02', {
+         server_url: 'http://viewer.everydo.com:9870',
+         source_url: 'http://download.zopen.cn/demo/mm[1].mpg',
+         width: 520,
+         height: 330
+       });
+       viewer.load();
    </script>
 
 
@@ -73,7 +85,12 @@ Office 文档
 
    <div id="doc-viewer-03"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/demo.wav', 'doc-viewer-03', {width:250})
+       var viewer = EdoViewer.createViewer('edo-viewer-03', {
+         server_url: 'http://viewer.everydo.com:9870',
+         source_url: 'http://download.zopen.cn/demo/demo.wav',
+         width: 250
+       });
+       viewer.load();
    </script>
 
 压缩包
@@ -87,7 +104,11 @@ Office 文档
    </style>
    <div id="doc-viewer-04"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/everydo-test-archive-file.rar', 'doc-viewer-04')
+       var viewer = EdoViewer.createViewer('edo-viewer-04', {
+         server_url: 'http://viewer.everydo.com:9870',
+         source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar'
+       });
+       viewer.load();
    </script>
 
 
@@ -99,7 +120,13 @@ Office 文档
 
    <div id="doc-viewer-05"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/application.py', 'doc-viewer-05', {width:700, height:500})
+       var viewer = EdoViewer.createViewer('edo-viewer-05', {
+         server_url: 'http://viewer.everydo.com:9870',
+         source_url: 'http://download.zopen.cn/demo/application.py',
+         width: 700,
+         height: 500
+       });
+       viewer.load();
    </script>
 
 
@@ -109,9 +136,12 @@ Office 文档
 
 .. raw:: html
 
-   <div id="doc-viewer-08"></div>
+   <div id="doc-viewer-06"></div>
    <script type="text/javascript">
-       edo_viewer('http://viewer.everydo.com:9870', 'http://download.zopen.cn/demo/exif.jpg', 'doc-viewer-08')
+       var viewer = EdoViewer.createViewer('edo-viewer-06', {
+         server_url: 'http://viewer.everydo.com:9870',
+         source_url: 'http://download.zopen.cn/demo/exif.jpg'
+       });
    </script>
 
 
