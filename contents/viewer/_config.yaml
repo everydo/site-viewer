@@ -2,5 +2,5 @@ description: ''
 exclude: [images]
 order: [index.rst, product, demo, tech, biz]
 theme: default.html
-theme_base: http://download.zopen.cn/themes/viewer
+theme_base: /themes/bootstrap
 title: 易度
