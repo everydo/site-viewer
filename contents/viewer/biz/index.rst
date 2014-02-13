@@ -7,11 +7,9 @@ title: 商务合作
 .. raw:: html
 
     <div class="portlet">
-        <p>联系电话：020-38055596</p>
-        <p>联系邮箱：<a href="mailto:market@everydo.com">market@everydo.com</a></p>
+        <p>联系电话：020-66351882</p>
+        <p>联系邮箱：<a href="mailto:sales@everydo.com">sales@everydo.com</a></p>
     </div>
-
-
 
 商务合作
 //////////////////////////////////////////////
