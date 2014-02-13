@@ -1,95 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>$title - $site_title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="$site_description">
+    <meta content="$description" name="description" />
+    <meta content="在线查看文档,云查看" name="keyword" />
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="http://www.bootcss.com/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://www.bootcss.com/assets/css/site.min.css" rel="stylesheet">
+    <title>$title - $site_title</title>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Bootstrap core CSS -->
+    <link href="http://v3.bootcss.com/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="http://v3.bootcss.com/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://v3.bootcss.com/examples/theme/theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Le fav and touch icons -->
-
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.bootcss.com/assets/ico/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="http://www.bootcss.com/assets/ico/favicon.png">
-
-    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.png">
-
+  <style type="text/css"></style>
+  <style id="holderjs-style" type="text/css"></style>
+  <script src="http://viewer.everydo.com:9870/edoviewer/edo_viewer.js"></script>
   </head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body style="">
 
-    <!-- Navbar
-    ================================================== -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <!-- <span class="sr-only">Toggle navigation</span> -->
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">ZCMS</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav navbar-nav">
-              $nav
-            </ul>
-          </div>
+          <a class="navbar-brand" style="color: #000;"href="/">易度云查看 - 在线查看文档</a>
         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" style="float: right;">
+            $nav
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
-$upper
+    <div class="container theme-showcase">
 
-<div class="container">
-     $content
-</div>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      
+        $content
+     
+    </div> <!-- /container -->
 
-
-    <footer class="footer">
-      <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
-          <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
-        </ul>
+    <div class="foot" style="font-size: 12px;color: #666;padding-top: 10px;border-top: 1px solid #CCC;">
+          <p class="l">易度云查看: 在线查看文档最佳解决方案 | 广州润普网络科技有限公司 版权所有 &copy; 2002-2014 粤ICP备11098433<a style="float:right;" href="http://www.everydo.com/" target="_blank">易度云办公旗下网站</a></p>
+          <div class="clear"></div>
       </div>
-    </footer>
 
-
-
-    <!-- Le javascript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-alert.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-popover.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-button.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-carousel.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-affix.js"></script>
+    <script src="./Theme Template for Bootstrap_files/jquery.min.js"></script>
+    <script src="./Theme Template for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Theme Template for Bootstrap_files/holder.min.js"></script>
+  
 
-  </body>
-</html>
-
+</body></html>
