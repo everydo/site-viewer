@@ -67,10 +67,30 @@ theme: home.html
         </div>
 
         <div class="clear"></div>
-        <div class="customers box">
-            <h2>
-                客 户 案 例：
-                <a href="http://jxzx.cc" target="_blank">金星教育</a>
-                <a href="http://everydo.com" target="_blank">易度云办公</a>
-            </h2>
+        
+        <div class="row" style="margin-right: 0px;margin-left: 0px; margin-top: 185px;">
+        <div class="col-xs-6 col-md-2">
+           <h2 style="text-align: center;margin-top: 8px;">他们在使用</h2>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="http://www.joyoung.com.cn/" target="_blank" class="">
+              <img style="height: 50px; width: 157px; display: block;" src= "http://ww4.sinaimg.cn/large/6355763cgw1edioyk2iqoj20a00453yl.jpg">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="http://pan.sohu.net/" target="_blank" class="">
+              <img style="height: 50px; width: 157px; display: block;" src= "https://pan.sohu.net/dpstatic/img/logo.png">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-2">
+              <img style="height: 50px; width: 157px; display: block;" src= "http://www.everydo.com/cases/img/logo-wangyi.gif">
+          </div>
+          <div class="col-xs-6 col-md-2">
+              <img style="height: 50px; width: 157px; display: block;" src= "http://www.everydo.com/cases/img/logo-hmzdfxx.gif">
+          </div>
+          <div class="col-xs-6 col-md-2">
+            <a href="http://jxzx.cc" target="_blank" class="">
+              <img style="height: 50px; width: 157px; display: block;" src= "http://jxzx.cc/images/log1.jpg">
+            </a>
+          </div>
         </div>
