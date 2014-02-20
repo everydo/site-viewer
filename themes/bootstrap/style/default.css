@@ -1,7 +1,3 @@
-body {
-  padding-top: 70px;
-}
-
 .theme-dropdown .dropdown-menu {
   display: block;
   position: static;
@@ -30,14 +26,6 @@ div.col-sm-9 h1, h2 {
   padding: 0 0 5px 0;
   border-bottom: solid 1px #ddd;
 }
-
-/* div.col-sm-3 h1 {
-  display: none;
-}
-
-.sidebar {
-  margin-top: 25px;
-} */
 
 .fix-padding {
   padding-bottom: 20px;

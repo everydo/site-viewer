@@ -29,7 +29,7 @@
   </head>
   <body>
 
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default" role="navigation">
       <div class="container">
         <!-- 移动设备浏览器切换导航 -->
         <div class="navbar-header">
@@ -50,8 +50,8 @@
     </div>
 
     <div class="container fix-padding">
-      <div class="row">
-        <div class="col-sm-3"><sidebar></sidebar></div>
+      <div class="row pin-here">
+        <div class="col-sm-3"><div class="pinned">$left</div></div>
         <div class="col-sm-9">$content</div>
       </div>
     </div>
@@ -65,8 +65,10 @@
     <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://www.bootcss.com/p/jquery.pin/jquery.pin.js"></script>
     <script>
-      $$('aside').appendTo('sidebar')
+      $$('aside').prependTo('.pinned');
+      $$(".pinned").pin({containerSelector: ".pin-here", minWidth: 940});
     </script>
   </body>
 </html>

@@ -8,7 +8,7 @@ title: 产品介绍
 /////////////////////////////////////
 
 .. contents::
-	:class: sidebar affix
+	:class: sidebar
 	
 传统网站，文档必须下载才能查看，这带来很多困扰：
 

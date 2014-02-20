@@ -8,7 +8,7 @@ title: 在线演示
 //////////////////
 
 .. contents::
-    :class: sidebar affix
+    :class: sidebar
 
 下载文件预览API
 ===============================
