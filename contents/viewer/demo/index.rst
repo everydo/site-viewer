@@ -8,7 +8,7 @@ title: 在线演示
 //////////////////
 
 .. contents::
-
+    :class: sidebar affix
 
 下载文件预览API
 ===============================
@@ -54,7 +54,8 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
          width: 700,
-         height: 537
+         height: 537,
+         bgcolor:"#FFFFFF"
        });
        viewer.load();
    </script>

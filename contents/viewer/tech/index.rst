@@ -8,7 +8,8 @@ title: 技术文档
 //////////////////
 
 .. contents::
-
+    :class: sidebar affix
+    
 系统总体组成
 ==============
 
