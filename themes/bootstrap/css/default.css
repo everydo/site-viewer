@@ -48,7 +48,7 @@ div.span9 h3 {
 }
 
 .fix-padding {
-  clear: both;
+  clear: both!important;
   padding-top: 40px;
   padding-bottom: 20px;
 }
