@@ -24,6 +24,10 @@ ul.nav li {
   padding: 25px 0 15px;
 }
 
+#edoviewer {
+  margin: 0 auto;
+}
+
 .logo {
   display: block;
   float: left;
