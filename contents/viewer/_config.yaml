@@ -1,6 +1,6 @@
-description: ''
+description: 在线查看文档服务
 exclude: [images]
 order: [index.rst, product, demo, tech, biz]
 theme: default.html
-theme_base: http://download.zopen.cn/themes/viewer
-title: 易度
+theme_base: /themes/bootstrap
+title: 易度云查看：在线查看文档最佳解决方案-易度云办公旗下网站

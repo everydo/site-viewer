@@ -5,7 +5,6 @@
 
 http://viewer.everydo.com
 
-建站工具CMS - ZCMS:
+建站工具CMS - ZCMS：
 
 https://github.com/everydo/zcms
-
