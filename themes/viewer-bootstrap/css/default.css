@@ -25,7 +25,7 @@ ul.nav li {
   float: left;
   width: 150px;
   height: 50px;
-  background-image: url("/themes/bootstrap/img/logo.png");
+  background-image: url("/themes/viewer-bootstrap/img/logo.png");
   background-repeat:no-repeat;
 }
 
