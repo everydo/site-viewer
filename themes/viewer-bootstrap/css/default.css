@@ -1,13 +1,5 @@
 body {
   font-family: "微软雅黑","黑体","宋体","Helvetica Neue",Helvetica,Arial,sans-serif;
-  padding-top: 40px;
-}
-
-.target-fix {
-    position: relative;
-    top: -40px;
-    display: block;
-    height: 0;
 }
 
 .navbar-inner {
@@ -49,7 +41,6 @@ div.span9 h3 {
 
 .fix-padding {
   clear: both!important;
-  padding-top: 40px;
   padding-bottom: 20px;
 }
 
