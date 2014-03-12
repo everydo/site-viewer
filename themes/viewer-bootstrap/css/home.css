@@ -1,6 +1,5 @@
 body {
   font-family: "微软雅黑","黑体","宋体","Helvetica Neue",Helvetica,Arial,sans-serif;
-  padding-top: 40px;
 }
 
 .navbar-inner {
@@ -11,13 +10,6 @@ body {
 
 ul.nav li {
   line-height: 30px;
-}
-
-.target-fix {
-    position: relative;
-    top: -40px;
-    display: block;
-    height: 0;
 }
 
 .fix-padding {
@@ -34,7 +26,7 @@ ul.nav li {
   float: left;
   width: 150px;
   height: 50px;
-  background-image: url("/themes/bootstrap/img/logo.png");
+  background-image: url("/themes/viewer-bootstrap/img/logo.png");
   background-repeat:no-repeat;
 }
 

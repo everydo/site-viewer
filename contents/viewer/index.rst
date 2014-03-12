@@ -46,7 +46,7 @@ theme: home.html
       <div class="row-fluid">
         <div class="span4">
           <div class="media">
-            <img class="pull-left media-object" src="/themes/bootstrap/img/editor.png">
+            <img class="pull-left media-object" src="/themes/viewer-bootstrap/img/editor.png">
             <div class="media-body">
             <h4 class="media-heading">百种文件支持，强劲转换</h4>
             <p>支持 100 多种格式文档，方便</p>
@@ -57,7 +57,7 @@ theme: home.html
         </div>
         <div class="span4">
           <div class="media">
-            <img class="pull-left media-object" src="/themes/bootstrap/img/zoom.png">
+            <img class="pull-left media-object" src="/themes/viewer-bootstrap/img/zoom.png">
             <div class="media-body">
             <h4 class="media-heading">8 种查看方式，跨终端浏览</h4>
             <p>浏览器、手机等多终端支持</p>
@@ -68,7 +68,7 @@ theme: home.html
         </div>
         <div class="span4">
           <div class="media">
-            <img class="pull-left media-object" src="/themes/bootstrap/img/Cloud.png">
+            <img class="pull-left media-object" src="/themes/viewer-bootstrap/img/Cloud.png">
             <div class="media-body">
             <h4 class="media-heading">方便集成，运维便捷</h4>
             <p>提供浏览器和OAuth API</p>
@@ -83,9 +83,9 @@ theme: home.html
       <div class="container case">
         <div class="row-fluid">
           <div class="span2 offset1 text-center"><h4>他们在使用云查看</h4></div>
-          <div class="span2"><img src="/themes/bootstrap/img/jy.jpg"></div>
-          <div class="span2"><img src="/themes/bootstrap/img/sh.png"></div>
-          <div class="span2"><img src="/themes/bootstrap/img/dq.jpg"></div>
-          <div class="span2"><img src="/themes/bootstrap/img/jx.jpg"></div>
+          <div class="span2"><img src="/themes/viewer-bootstrap/img/jy.jpg"></div>
+          <div class="span2"><img src="/themes/viewer-bootstrap/img/sh.png"></div>
+          <div class="span2"><img src="/themes/viewer-bootstrap/img/dq.jpg"></div>
+          <div class="span2"><img src="/themes/viewer-bootstrap/img/jx.jpg"></div>
         </div>
       </div>
