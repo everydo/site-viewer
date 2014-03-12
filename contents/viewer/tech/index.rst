@@ -4,8 +4,10 @@ creator: ''
 description: ''
 title: 技术文档
 ---
+
+==================
 技术文档
-//////////////////
+==================
 
 .. contents::
     :class: sidebar
@@ -26,63 +28,21 @@ title: 技术文档
 
 云查看API
 ===================
-云查看有2种集成API，都是js的api，在浏览器中实现集成，非常简单。
+云查看有3种集成API，包括浏览器的js api，在浏览器中实现集成，非常简单，以及基于OAuth的Open API。
 
-下载链接云查看
----------------------
+使用云查看APi，您可以：
 
-如果希望让您的站点快速支持下载文件的在线查看，在部署云查看标准版后，只需在您的网站加入如下代码即可::
+- 加一行脚本，让您的网站中的文件下载链接，立刻变成文档预览链接
+- 在您的网站中嵌入文档查看器
+- 和您的内部办公系集成，集成查看权限，支持文档安全水印
 
-    <script src="http://your.server.ip/static/api.js"></script>
-    <script type="text/javascript">
-        cloudview('http://your.server.ip/');
-    </script>
-
-添加后，您的站点中的下载链接，会自动转换为云查看链接，从而实现文档的云查看。
-
-网页内嵌云查看
----------------------
-在您的网页中内嵌一个查看器，方法为::
-
-    <div id="doc-viewer"></div>
-    <script src="http://your.server.ip:port/static/edo_viewer.js"></script>
-    <script type="text/javascript">
-        edo_viewer('http://your.server.ip:port', 'file:///var/aa.doc', 'doc-viewer', {width:700, height:537})
-    </script>
-
-其中edo_view方法是关键，有4个参数:
-
-- ``http://your.server.ip:port`` :这个是服务器的地址和端口, 比如 ``http://viewer.everydo.com:9870/``
-- ``file:///var/aa.doc`` 表示原始文件的url地址， ``file://`` 表示是本地文件，也可以是 ``http://``, ``ftp://`` 等远程获取.
-- ``doc-viewer`` : 查看器放置位置的id
-- ``kwargs`` : 是一个展示参数(width, height, allow_print, allow_copy, ...)
-
-我们会根据文件的后缀以及浏览器支持的情况，进行自动选择合适的查看器：
-
-- 在支持flash的浏览器上，我们会采用flash查看器来显示doc/ppt/pdf之类的文件
-- 对excel文件，我们会采用html来查看
-- 对于不支持flash的浏览器，我们会采用html来显示
-
-定制查看器
----------------------
-
-edo_viewer.js提供源代码的下载：
-
-- https://github.com/everydo/viewers
-- 里面包含了5个js：
-
-  - flowplayer.js
-  - swfobject.js
-  - md5.js
-  - viewer.js (如果您要对查看器进行扩展或调整，修改这个文件即可)
-  - main.js
-
+最新的详细API参看： http://developer.everydo.com/open/viewer.rst
 
 安装环境
 ==================
-- Ubuntu Server 8.04 以上版本
+系统采用虚拟机方式发布。
 
-Windows版本可能在未来发布
+- Ubuntu Server 8.04 以上版本
 
 FTS文档转换服务
 ======================
@@ -95,28 +55,6 @@ FTS文档转换服务，是系统核心的转换服务，内部构成如下：
 1. FTS文档转换服务，是以Redis作为中心的数据库，也是和外部通信的接口。
 2. 监控后台是可选启动的服务
 3. 工作服务器可部署多台，按需平滑扩展，自动负载均衡
-
-
-CDN 缓存部署
-==================
-转换后的数据通常比原始的文件数量还要多。
-
-转换文件的存储管理，以及高可用部署，成为一个难点。
-
-对于数据量不大的小型系统，普通存储即可满足要求。
-
-对于大数据量高可用的服务，易度云查看推荐使用CDN/缓存管理来管理转换后的数据，技术架构图如下：
-
-.. image:: images/tech-cdn.png
-
-主要特点：
-
-- 使用现有技术： Squid/apache/nginx/varnish
-- 使用现有的管理知识
-- 标准的整合方法
-- 海量数据省空间、自动删除少用数据
-- 大负载：方便扩容和负载均衡
-- 容错：对磁盘要求低，廉价存储系统即可
 
 云查看链接生成
 =======================

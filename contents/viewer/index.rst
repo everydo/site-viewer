@@ -70,10 +70,10 @@ theme: home.html
           <div class="media">
             <img class="pull-left media-object" src="/themes/bootstrap/img/Cloud.png">
             <div class="media-body">
-            <h4 class="media-heading">按需扩展，运维便捷</h4>
-            <p>根据需求随时扩展</p>
-            <p>支持分布式存储</p>
-            <p>转换异常处理</p>
+            <h4 class="media-heading">方便集成，运维便捷</h4>
+            <p>提供浏览器和OAuth API</p>
+            <p>动态水印和查看权限限制</p>
+            <p>提供转换监控后台</p>
             </div>
           </div>
         </div>
