@@ -53,6 +53,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-01', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
+         account:'default.zopen.dev',
          width: 700,
          height: 537,
          bgcolor:"#FFFFFF"
@@ -71,6 +72,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-02', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/mm[1].mpg',
+         account:'default.zopen.dev',
          width: 520,
          height: 330
        });
@@ -89,6 +91,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-03', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/demo.wav',
+         account:'default.zopen.dev',
          width: 250
        });
        viewer.load();
@@ -108,6 +111,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-04', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar'
+         account:'default.zopen.dev',
        });
        viewer.load();
    </script>
@@ -124,6 +128,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-05', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/application.py',
+         account:'default.zopen.dev',
          width: 700,
          height: 500
        });
@@ -142,6 +147,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-06', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/exif.jpg'
+         account:'default.zopen.dev',
        });
        viewer.load();
    </script>
