@@ -110,8 +110,8 @@ Office 文档
    <script type="text/javascript">
        var viewer = EdoViewer.createViewer('doc-viewer-04', {
          server_url: 'http://viewer.everydo.com:9870',
-         source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar'
-         account:'default.zopen.dev',
+         source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar',
+         account:'default.zopen.dev'
        });
        viewer.load();
    </script>
@@ -146,8 +146,8 @@ Office 文档
    <script type="text/javascript">
        var viewer = EdoViewer.createViewer('doc-viewer-06', {
          server_url: 'http://viewer.everydo.com:9870',
-         source_url: 'http://download.zopen.cn/demo/exif.jpg'
-         account:'default.zopen.dev',
+         source_url: 'http://download.zopen.cn/demo/exif.jpg',
+         account:'default.zopen.dev'
        });
        viewer.load();
    </script>
