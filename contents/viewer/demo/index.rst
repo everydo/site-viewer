@@ -146,7 +146,7 @@ Office 文档
    <script type="text/javascript">
        var viewer = EdoViewer.createViewer('doc-viewer-06', {
          server_url: 'http://viewer.everydo.com:9870',
-         source_url: 'http://download.zopen.cn/demo/exif.jpg'
+         source_url: 'http://download.zopen.cn/demo/exif.jpg',
          account: 'zopen',
        });
        viewer.load();
