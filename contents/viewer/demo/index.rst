@@ -34,7 +34,7 @@ title: 在线演示
 
    <script src="http://viewer.everydo.com:9870/edoviewer/api.js"></script>
    <script>
-    cloudview('http://viewer.everydo.com:9870/');
+    cloudview('http://viewer.everydo.com:9870/', account='zopen');
    </script>
 
 内嵌查看
@@ -53,6 +53,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-01', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
+         account: 'zopen',
          width: 700,
          height: 537,
          bgcolor:"#FFFFFF"
@@ -71,6 +72,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-02', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/mm[1].mpg',
+         account: 'zopen',
          width: 520,
          height: 330
        });
@@ -89,6 +91,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-03', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/demo.wav',
+         account: 'zopen',
          width: 250
        });
        viewer.load();
@@ -107,7 +110,8 @@ Office 文档
    <script type="text/javascript">
        var viewer = EdoViewer.createViewer('doc-viewer-04', {
          server_url: 'http://viewer.everydo.com:9870',
-         source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar'
+         source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar',
+         account: 'zopen',
        });
        viewer.load();
    </script>
@@ -124,6 +128,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-05', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/application.py',
+         account: 'zopen',
          width: 700,
          height: 500
        });
@@ -142,6 +147,7 @@ Office 文档
        var viewer = EdoViewer.createViewer('doc-viewer-06', {
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/exif.jpg'
+         account: 'zopen',
        });
        viewer.load();
    </script>
