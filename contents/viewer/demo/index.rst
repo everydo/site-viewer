@@ -54,6 +54,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
          account: 'zopen',
+         instance: 'default',
          width: 700,
          height: 537,
          bgcolor:"#FFFFFF"
@@ -73,6 +74,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/mm[1].mpg',
          account: 'zopen',
+         instance: 'default',
          width: 520,
          height: 330
        });
@@ -92,6 +94,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/demo.wav',
          account: 'zopen',
+         instance: 'default',
          width: 250
        });
        viewer.load();
@@ -112,6 +115,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/everydo-test-archive-file.rar',
          account: 'zopen',
+         instance: 'default'
        });
        viewer.load();
    </script>
@@ -129,6 +133,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/application.py',
          account: 'zopen',
+         instance: 'default',
          width: 700,
          height: 500
        });
@@ -148,6 +153,7 @@ Office 文档
          server_url: 'http://viewer.everydo.com:9870',
          source_url: 'http://download.zopen.cn/demo/exif.jpg',
          account: 'zopen',
+         instance: 'default'
        });
        viewer.load();
    </script>
