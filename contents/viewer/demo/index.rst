@@ -34,7 +34,7 @@ title: 在线演示
 
    <script src="http://viewer.everydo.com:9870/edoviewer/api.js"></script>
    <script>
-    cloudview('http://viewer.everydo.com:9870/', account='zopen');
+    cloudview('http://viewer.everydo.com:9870/', account='zopen', instance='default');
    </script>
 
 内嵌查看
