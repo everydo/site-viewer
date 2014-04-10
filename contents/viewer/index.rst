@@ -33,6 +33,8 @@ theme: home.html
             var viewer = EdoViewer.createViewer('edoviewer', {
             server_url: 'http://viewer.everydo.com:9870',
             source_url: 'http://download.zopen.cn/demo/edo-viewer.ppt',
+            account:'zopen',
+            instance:'default',
             width: width,
             height: height,
             bgcolor:"#E8F2F4"
