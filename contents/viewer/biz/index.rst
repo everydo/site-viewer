@@ -5,17 +5,18 @@ description: ''
 title: 商务合作
 ---
 
-联系方式
-===========
-
-- 联系电话：020-38055596 020-66351883
-- 联系邮箱：market@everydo.com
-- `申请下载试用 <http://zopen.easydo.cn/default/sales/inquiry_form/@@@zopen.sales.survey>`__
 
 商务合作
 =============
 
 .. contents::
+
+联系方式
+----------
+
+- 联系电话：020-38055596 020-66351883
+- 联系邮箱：market@everydo.com
+- `申请下载试用 <http://zopen.easydo.cn/default/sales/inquiry_form/@@@zopen.sales.survey>`__
 
 特别适合以下服务
 ---------------------------------
