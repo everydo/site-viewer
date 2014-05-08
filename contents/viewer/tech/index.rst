@@ -36,7 +36,10 @@ title: 技术文档
 - 在您的网站中嵌入文档查看器
 - 和您的内部办公系集成，集成查看权限，支持文档安全水印
 
-最新的详细API参看： http://developer.everydo.com/open/viewer.rst
+最新的详细API参看： 
+
+- 前端查看器JS API： http://developer.everydo.com/sdk/viewer.rst
+- 云查看服务器REST API： http://developer.everydo.com/api/file.rst
 
 安装环境
 ==================
