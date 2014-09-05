@@ -38,8 +38,7 @@ title: 技术文档
 
 最新的详细API参看： 
 
-- 前端查看器JS API： http://developer.everydo.com/sdk/viewer.rst
-- 云查看服务器REST API： http://developer.everydo.com/api/file.rst
+   http://developer.everydo.com/api/viewer.rst
 
 安装环境
 ==================
