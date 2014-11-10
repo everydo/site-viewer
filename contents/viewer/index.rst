@@ -14,7 +14,7 @@ theme: home.html
 
     <div class="jumbotron">
       <div class="container text-center center-block">
-          <div id="edoviewer"></div>
+          <center><div id="edoviewer"></div></center>
           <script type="text/javascript">
             if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent)))
             {
@@ -43,7 +43,7 @@ theme: home.html
           </script>
       </div>
     </div>
-  
+
     <div class="container features-box">
       <div class="row-fluid">
         <div class="span4">
@@ -81,7 +81,7 @@ theme: home.html
         </div>
       </div>
     </div>
-    
+
       <div class="container case">
         <div class="row-fluid">
           <div class="span2 offset1 text-center"><h4>他们在使用云查看</h4></div>
