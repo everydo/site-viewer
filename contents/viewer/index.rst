@@ -14,7 +14,7 @@ theme: home.html
 
     <div class="jumbotron">
       <div class="container text-center center-block">
-          <div id="edoviewer"></div>
+          <center><div id="edoviewer"></div></center>
           <script type="text/javascript">
             if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent)))
             {
