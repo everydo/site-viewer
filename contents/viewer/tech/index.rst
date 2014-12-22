@@ -38,7 +38,7 @@ title: 技术文档
 
 最新的详细API参看： 
 
-   http://developer.everydo.com/api/viewer.rst
+   https://zopen.everydo.cn/platform/docs/viewer
 
 安装环境
 ==================
