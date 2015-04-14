@@ -14,7 +14,7 @@ title: 商务合作
 联系方式
 ----------
 
-- 联系电话：020-38055596 020-66351883
+- 联系电话：400-1066-883 020-85558816
 - 联系邮箱：market@everydo.com
 - `申请下载试用 <http://zopen.everydo.cn/default/sales/inquiry_form/@@@zopen.sales.survey>`__
 
